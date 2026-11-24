@@ -1,0 +1,20 @@
+#!/bin/sh
+# Start Beszel hub (or run a Beszel CLI subcommand); /init drops to the run
+# user during container boot, and dsu drops root under direct podman exec.
+
+if [ "$(id -u)" -eq 0 ]; then
+    run_user="${DAEMONLESS_USER:-bsd}"
+    run_home=$(getent passwd "${run_user}" | cut -d: -f6)
+    export HOME="${run_home:-/config}" USER="${run_user}" LOGNAME="${run_user}"
+    exec dsu "${run_user}" "$0" "$@"
+fi
+
+export HOME=/config
+mkdir -p /config/beszel_data
+cd /config || exit 1
+
+if [ $# -eq 0 ]; then
+    set -- serve --http="0.0.0.0:${PORT:-8090}"
+fi
+
+exec /usr/local/bin/beszel "$@"
