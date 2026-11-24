@@ -1,0 +1,106 @@
+name: beszel
+
+x-daemonless:
+  title: "Beszel"
+  icon: ":material-monitor-dashboard:"
+  category: "Monitoring"
+  description: "Lightweight server monitoring hub with historical data, container stats, and alerts."
+  upstream_url: "https://github.com/henrygd/beszel"
+  web_url: "https://beszel.dev"
+  user: "bsd"
+  mlock: false
+  appjail: true
+  upstream_binary: true
+  cli: [beszel]
+  community: "Discord:https://discord.gg/Kb9tkhecZT"
+
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+      APP_URL:
+        desc: "Public URL of the hub (used in alert/email links and subpath routing)"
+        public_url: url
+        optional: true
+        level: primary
+      DISABLE_PASSWORD_AUTH:
+        desc: "Disable password login (for OAuth2/OIDC-only setups)"
+        type: boolean
+        optional: true
+        level: options
+      USER_CREATION:
+        desc: "Allow creating additional user accounts via OAuth2/OIDC"
+        type: boolean
+        optional: true
+        level: options
+      SHARE_ALL_SYSTEMS:
+        desc: "Share all monitored systems across all users"
+        type: boolean
+        optional: true
+        level: options
+      AGENT_LISTEN:
+        desc: "Optional separate address/port (for example :45876) for agent-only WebSocket connections"
+        optional: true
+        level: advanced
+      CHECK_UPDATES:
+        desc: "Check GitHub for newer Beszel releases (defaults to false)"
+        type: boolean
+        optional: true
+        level: advanced
+      CSP:
+        desc: "Optional Content-Security-Policy response header value"
+        optional: true
+        level: advanced
+      HEARTBEAT_URL:
+        desc: "External URL to ping periodically for hub heartbeat monitoring"
+        optional: true
+        level: advanced
+      AUTO_LOGIN:
+        desc: "Email address of a user to automatically sign in"
+        optional: true
+        level: advanced
+    volumes:
+      /config: "Persistent Beszel/PocketBase database, SSH key, and backups (/config/beszel_data)"
+    ports:
+      8090: "Web UI and agent WebSocket API"
+
+  notes: |
+    ## First start and data
+
+    Open `http://<host>:8090` to create the initial admin account. Persistent
+    PocketBase SQLite data, the generated SSH key (`id_ed25519`), and backups
+    live in `/config/beszel_data`.
+
+    ## Connecting FreeBSD hosts
+
+    Install `beszel-agent` natively on each FreeBSD host
+    (`beszel-agent_freebsd_amd64.tar.gz` or `beszel-agent_freebsd_arm64.tar.gz`
+    from upstream releases) so the agent has direct access to host CPU, ZFS,
+    disk, temperature, and container metrics, then add the system in the hub
+    UI.
+
+    ## CLI subcommands
+
+    Run Beszel/PocketBase CLI commands as `bsd` in `/config`, for example:
+
+    ```sh
+    podman exec beszel beszel superuser upsert admin@example.com <password>
+    ```
+
+services:
+  beszel:
+    image: ghcr.io/daemonless/beszel:latest
+    container_name: beszel
+    restart: unless-stopped
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+
+    volumes:
+      - /path/to/containers/beszel:/config
+
+    ports:
+      - "8090:8090"
