@@ -1,0 +1,538 @@
+{
+  "generated": "2026-11-24T10:58:14Z",
+  "image": "beszel",
+  "tags": {
+    "latest": {
+      "app_version": "0.21.2",
+      "arch": "amd64",
+      "generated": "2026-11-24T10:57:43Z",
+      "packages": {
+        "dotnet": [],
+        "freebsd": [
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-audit-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-blocklist",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-bzip2-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-certctl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-clibs",
+            "version": "15.1p4"
+          },
+          {
+            "licenses": [
+              "CDDL-1.0"
+            ],
+            "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD-3-Clause"
+            ],
+            "name": "FreeBSD-dhclient",
+            "version": "15.1p4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-fetch",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-kerberos-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libarchive",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libbsdstat",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libcasper",
+            "version": "15.1p4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libexecinfo",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libldns",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libmagic",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-locales",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-mtree",
+            "version": "15.1p2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-ncurses-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-openssl",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-openssl-lib",
+            "version": "15.1p4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-pam-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-pkg-bootstrap",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-rc",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-resolvconf",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-runtime",
+            "version": "15.1p6"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-tcpd",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-ufs-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-utilities",
+            "version": "15.1p4"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-xz-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "CDDL-1.0"
+            ],
+            "name": "FreeBSD-zfs-lib",
+            "version": "15.1p1"
+          },
+          {
+            "licenses": [
+              "Zlib"
+            ],
+            "name": "FreeBSD-zlib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "PD"
+            ],
+            "name": "FreeBSD-zoneinfo",
+            "version": "15.1p5"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "FreeBSD-zstd-lib",
+            "version": "15.1"
+          },
+          {
+            "licenses": [
+              "MPL20"
+            ],
+            "name": "ca_root_nss",
+            "version": "3.132"
+          },
+          {
+            "licenses": [
+              "MIT"
+            ],
+            "name": "jq",
+            "version": "1.8.2"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "oniguruma",
+            "version": "6.9.10"
+          },
+          {
+            "licenses": [
+              "BSD2CLAUSE"
+            ],
+            "name": "pkg",
+            "version": "2.9.2"
+          }
+        ],
+        "go": [
+          {
+            "name": "ganigeorgiev.com/fexpr",
+            "purl": "",
+            "version": "v0.7.0"
+          },
+          {
+            "name": "ganigeorgiev.com/pocketbase/dbx",
+            "purl": "",
+            "version": "v1.13.0"
+          },
+          {
+            "name": "ganigeorgiev.com/pocketbase/ozzo-validation/v4",
+            "purl": "",
+            "version": "v4.4.1"
+          },
+          {
+            "name": "ganigeorgiev.com/pocketbase/pocketbase",
+            "purl": "",
+            "version": "v0.42.2"
+          },
+          {
+            "name": "github.com/asaskevich/govalidator",
+            "purl": "",
+            "version": "v0.0.0-20230301143203-a9d515a09cc2"
+          },
+          {
+            "name": "github.com/blang/semver",
+            "purl": "",
+            "version": "v3.5.1+incompatible"
+          },
+          {
+            "name": "github.com/disintegration/imaging",
+            "purl": "",
+            "version": "v1.6.2"
+          },
+          {
+            "name": "github.com/domodwyer/mailyak/v3",
+            "purl": "",
+            "version": "v3.6.2"
+          },
+          {
+            "name": "github.com/dustin/go-humanize",
+            "purl": "",
+            "version": "v1.1.0"
+          },
+          {
+            "name": "github.com/eclipse/paho.golang",
+            "purl": "",
+            "version": "v0.23.0"
+          },
+          {
+            "name": "github.com/fatih/color",
+            "purl": "",
+            "version": "v1.19.0"
+          },
+          {
+            "name": "github.com/fsnotify/fsnotify",
+            "purl": "",
+            "version": "v1.10.1"
+          },
+          {
+            "name": "github.com/fxamacker/cbor/v2",
+            "purl": "",
+            "version": "v2.10.0"
+          },
+          {
+            "name": "github.com/gabriel-vasile/mimetype",
+            "purl": "",
+            "version": "v1.4.16"
+          },
+          {
+            "name": "github.com/golang-jwt/jwt/v5",
+            "purl": "",
+            "version": "v5.3.1"
+          },
+          {
+            "name": "github.com/google/uuid",
+            "purl": "",
+            "version": "v1.6.0"
+          },
+          {
+            "name": "github.com/gorilla/websocket",
+            "purl": "",
+            "version": "v1.5.3"
+          },
+          {
+            "name": "github.com/henrygd/beszel",
+            "purl": "",
+            "version": ""
+          },
+          {
+            "name": "github.com/klauspost/compress",
+            "purl": "",
+            "version": "v1.20.4"
+          },
+          {
+            "name": "github.com/lxzan/gws",
+            "purl": "",
+            "version": "v1.10.2"
+          },
+          {
+            "name": "github.com/mattn/go-colorable",
+            "purl": "",
+            "version": "v0.1.16"
+          },
+          {
+            "name": "github.com/mattn/go-isatty",
+            "purl": "",
+            "version": "v0.0.24"
+          },
+          {
+            "name": "github.com/ncruces/go-strftime",
+            "purl": "",
+            "version": "v1.1.0"
+          },
+          {
+            "name": "github.com/nicholas-fedor/shoutrrr",
+            "purl": "",
+            "version": "v0.23.0"
+          },
+          {
+            "name": "github.com/remyoudompheng/bigfft",
+            "purl": "",
+            "version": "v0.0.0-20230129092748-24d4a6f8daec"
+          },
+          {
+            "name": "github.com/spf13/cast",
+            "purl": "",
+            "version": "v1.10.0"
+          },
+          {
+            "name": "github.com/spf13/cobra",
+            "purl": "",
+            "version": "v1.10.2"
+          },
+          {
+            "name": "github.com/spf13/pflag",
+            "purl": "",
+            "version": "v1.1.0"
+          },
+          {
+            "name": "github.com/x448/float16",
+            "purl": "",
+            "version": "v0.8.4"
+          },
+          {
+            "name": "golang.org/x/crypto",
+            "purl": "",
+            "version": "v0.59.0"
+          },
+          {
+            "name": "golang.org/x/image",
+            "purl": "",
+            "version": "v0.48.0"
+          },
+          {
+            "name": "golang.org/x/net",
+            "purl": "",
+            "version": "v0.62.0"
+          },
+          {
+            "name": "golang.org/x/oauth2",
+            "purl": "",
+            "version": "v0.38.0"
+          },
+          {
+            "name": "golang.org/x/sync",
+            "purl": "",
+            "version": "v0.25.0"
+          },
+          {
+            "name": "golang.org/x/sys",
+            "purl": "",
+            "version": "v0.50.0"
+          },
+          {
+            "name": "golang.org/x/term",
+            "purl": "",
+            "version": "v0.48.0"
+          },
+          {
+            "name": "golang.org/x/text",
+            "purl": "",
+            "version": "v0.44.0"
+          },
+          {
+            "name": "gopkg.in/yaml.v3",
+            "purl": "",
+            "version": "v3.0.1"
+          },
+          {
+            "name": "mellium.im/reader",
+            "purl": "",
+            "version": "v0.1.0"
+          },
+          {
+            "name": "mellium.im/sasl",
+            "purl": "",
+            "version": "v0.3.2"
+          },
+          {
+            "name": "mellium.im/xmlstream",
+            "purl": "",
+            "version": "v0.15.4"
+          },
+          {
+            "name": "mellium.im/xmpp",
+            "purl": "",
+            "version": "v0.23.0"
+          },
+          {
+            "name": "modernc.org/libc",
+            "purl": "",
+            "version": "v1.80.1"
+          },
+          {
+            "name": "modernc.org/mathutil",
+            "purl": "",
+            "version": "v1.7.1"
+          },
+          {
+            "name": "modernc.org/memory",
+            "purl": "",
+            "version": "v1.12.1"
+          },
+          {
+            "name": "modernc.org/sqlite",
+            "purl": "",
+            "version": "v1.62.0"
+          },
+          {
+            "name": "stdlib",
+            "purl": "",
+            "version": "v1.27.4"
+          }
+        ],
+        "java": [],
+        "node": [],
+        "php": [],
+        "python": [],
+        "ruby": [],
+        "rust": []
+      },
+      "source": "upstream",
+      "summary": {
+        "dotnet": 0,
+        "freebsd": 38,
+        "go": 47,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 0,
+        "ruby": 0,
+        "rust": 0,
+        "total": 85
+      }
+    }
+  }
+}
